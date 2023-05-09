@@ -23,4 +23,4 @@ jobs:
           api_token: ${{ secrets.BOOST_API_TOKEN }}
           registry_module: opensecurity/mobsfscan-2
           api_endpoint: https://api.dev.boostsec.io
-          additional_args: --registry https://github.com/boostsecurityio/scanner-testing.git#BST-5328-mobsfscan-with-import
+          additional_args: --registry https://github.com/boostsecurityio/scanner-testing.git
