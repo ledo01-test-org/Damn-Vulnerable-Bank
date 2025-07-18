@@ -17,7 +17,7 @@ const validateUserToken = function(req, res, next) {
   const authHeader = req.headers["authorization"];
   const token = authHeader && authHeader.split(" ")[1];
 
-  if (token == null) {
+  if (!token) {
       r.status = statusCodes.NOT_AUTHORIZED;
       r.data = {
         "message": "Not authorized"
